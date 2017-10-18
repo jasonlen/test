@@ -1,0 +1,270 @@
+<html>
+<head><title>Image map created by yEd</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n0">Identity</div>
+<div class="tooltip" id="n1">Identity-verification</div>
+<div class="tooltip" id="n2">swagger</div>
+<div class="tooltip" id="n3">identity-security</div>
+<div class="tooltip" id="n4">social-auth</div>
+<div class="tooltip" id="n5">authentication</div>
+<div class="tooltip" id="n6">access-token</div>
+<div class="tooltip" id="n7">capcha</div>
+<div class="tooltip" id="n8">profile</div>
+<div class="tooltip" id="n9">verification</div>
+<div class="tooltip" id="n10">account-template</div>
+<div class="tooltip" id="n11">notification</div>
+<div class="tooltip" id="n12">Global viveport portal</div>
+<div class="tooltip" id="n13">AWS SES<br> (Email)</div>
+<div class="tooltip" id="n14">Nexmo<br>(sms)</div>
+<div class="tooltip" id="n15">2FA authentication</div>
+<div class="tooltip" id="n16">POST /api/account-service/v1/enterprise/email/create</div>
+<div class="tooltip" id="n17">PATCH /api/account-service/v1/enterprise/email<br></div>
+<div class="tooltip" id="n18">POST /api/account-service/v1/resend-verification</div>
+<div class="tooltip" id="n19">DELETE /api/account-service/v1/enterprise </div>
+<div class="tooltip" id="n20">/api/identity-security-service/v1/email/password-forgot</div>
+<div class="tooltip" id="n21">/api/identity-security-service/v1/password-change</div>
+<div class="tooltip" id="n22">POST /api/authentication/v1/accounts/native/email/sign-in</div>
+<div class="tooltip" id="n23">POST /api/authentication/v1/accounts/native/phone/sign-in</div>
+<div class="tooltip" id="n24">POST /priv/identity-verification/v1/${topic}</div>
+<div class="tooltip" id="n25">PUT /api/identity-verification/v1//${topic}</div>
+<div class="tooltip" id="n26">GET /priv/accountidentity/v1/bundles/<br>${connectionType}?connectionIds=886-12345678<br>&connectionIds=886-12345673</div>
+<div class="tooltip" id="n27">GET /priv/accountidentity/v1/identities/bundles/${connectionType}</div>
+<div class="tooltip" id="n28">Flow Chart</div>
+<div class="tooltip" id="n29">POST /priv/accountidentity/v1/identities/phone_create</div>
+<div class="tooltip" id="n30">POST /priv/accountidentity/v1/identities/connections/social_connect</div>
+<div class="tooltip" id="n31">POST /priv/accountidentity/v1/identities/social_authenticate</div>
+<div class="tooltip" id="n32">POST /priv/accountidentity/v1/identities/email_authenticate</div>
+<div class="tooltip" id="n33">POST /priv/accountidentity/v1/identities/phone_authenticate</div>
+<div class="tooltip" id="n34">PATCH /priv/accountidentity/v1/identities/connections/email_update</div>
+<div class="tooltip" id="n35">PATCH /priv/accountidentity/v1/identities/connections/phone_update</div>
+<div class="tooltip" id="n36">PATCH /priv/accountidentity/v1/identities/connections/<br>social_update?connectionType=fb</div>
+<div class="tooltip" id="n37">PATCH /priv/accountidentity/v1/identities/password_change</div>
+<div class="tooltip" id="n38">PATCH /priv/accountidentity/v1/identities/password_reset</div>
+<div class="tooltip" id="n39">PATCH /priv/accountidentity/v1/identities/bundles/phone_verified</div>
+<div class="tooltip" id="n40">PATCH /priv/accountidentity/v1/identities/bundles/email_verified</div>
+<div class="tooltip" id="n41">PATCH /priv/accountidentity/v1/identities/bundles/<br>change?connectionType=fb&bundleType=email</div>
+<div class="tooltip" id="n42">DELETE /priv/accountidentity/v1/identities/remove</div>
+<div class="tooltip" id="n43">email/phone sign up<br>social sign up<br>delete account<br>change email<br>change phone<br>resent sign up verification<br>resent chance verification</div>
+<div class="tooltip" id="n44">Global viveport portal</div>
+<div class="tooltip" id="n45">change password<br>Forgot password<br>reset password<br>change backupEmail<br>change backupPhone<br>turnOn 2FA<br></div>
+<div class="tooltip" id="n46">Security used capcha ?</div>
+<div class="tooltip" id="n47">put /priv/business-profile/v1/profiles/{id}</div>
+<div class="tooltip" id="n48">put /api/business-profile/v1/profiles/{id}</div>
+<div class="tooltip" id="n49">post /api/business-profile/v1/internal/profiles</div>
+<div class="tooltip" id="n50">get /api/business-profile/v1/internal/profiles/{id}</div>
+<div class="tooltip" id="n51">get /api/business-profile/v1/profiles/{id}</div>
+<div class="tooltip" id="n52">delete /priv/business-profile/v1/profiles/{id}</div>
+<div class="tooltip" id="n53">post /priv/business-profile/v1/profiles/{id}</div>
+<div class="tooltip" id="e2">email sign up</div>
+<div class="tooltip" id="e3">Get</div>
+<div class="tooltip" id="e4">Get</div>
+<div class="tooltip" id="e5">change password</div>
+<div class="tooltip" id="e6">2</div>
+<div class="tooltip" id="e7">???</div>
+<div class="tooltip" id="e8">email sign in</div>
+<div class="tooltip" id="e9">get /verified</div>
+<div class="tooltip" id="e10">1</div>
+<div class="tooltip" id="e13">4</div>
+<div class="tooltip" id="e14">1</div>
+<div class="tooltip" id="e15">3</div>
+<div class="tooltip" id="e16">2</div>
+<div class="tooltip" id="e17">1</div>
+<div class="tooltip" id="e18">2</div>
+<div class="tooltip" id="e19">change email</div>
+<div class="tooltip" id="e20">resent sign up verification</div>
+<div class="tooltip" id="e21">1</div>
+<div class="tooltip" id="e22">2</div>
+<div class="tooltip" id="e23">delete account</div>
+<div class="tooltip" id="e24">1</div>
+<div class="tooltip" id="e25">2</div>
+<div class="tooltip" id="e26">phone sign in</div>
+<div class="tooltip" id="e27">forgot password</div>
+<div class="tooltip" id="e28">1</div>
+<div class="tooltip" id="e29">1</div>
+<div class="tooltip" id="e30">2</div>
+<div class="tooltip" id="e31">2</div>
+<div class="tooltip" id="e33">1</div>
+
+<map name="image1_1">
+  <area shape="poly" coords="730,1327,885,1327,890,1322,890,833,885,828,799,828,799,838,885,838,885,833,880,833,880,1322,885,1322,885,1317,730,1317,730,1327,730,1327" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e33')"/>
+  <area shape="poly" coords="730,1357,893,1357,893,1357,893,1357,1058,1337,1057,1327,892,1347,893,1352,893,1347,730,1347,730,1357,730,1357" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e31')"/>
+  <area shape="poly" coords="730,1327,1057,1327,1057,1317,730,1317,730,1327,730,1327" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e30')"/>
+  <area shape="poly" coords="730,1357,863,1357,868,1352,868,854,863,849,799,849,799,859,863,859,863,854,858,854,858,1352,863,1352,863,1347,730,1347,730,1357,730,1357" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e29')"/>
+  <area shape="poly" coords="706,1467,905,1467,910,1462,910,1035,905,1030,799,1030,799,1040,905,1040,905,1035,900,1035,900,1462,905,1462,905,1457,706,1457,706,1467,706,1467" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e28')"/>
+  <area shape="poly" coords="134,1308,237,1465,239,1467,241,1467,363,1467,363,1457,241,1457,241,1462,246,1460,142,1302,134,1308,134,1308" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e27')"/>
+  <area shape="poly" coords="155,1309,236,1357,237,1357,238,1357,363,1357,363,1347,238,1347,238,1352,241,1348,160,1300,155,1309,155,1309" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e26')"/>
+  <area shape="poly" coords="706,524,919,524,924,519,924,109,919,104,714,104,714,114,919,114,919,109,914,109,914,519,919,519,919,514,706,514,706,524,706,524" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e25')"/>
+  <area shape="poly" coords="706,524,893,524,893,519,888,519,888,1147,893,1147,893,1142,799,1142,799,1152,893,1152,898,1147,898,519,893,514,706,514,706,524,706,524" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e24')"/>
+  <area shape="poly" coords="96,421,201,522,202,524,204,524,364,524,364,514,204,514,204,519,208,515,103,413,96,421,96,421" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e23')"/>
+  <area shape="poly" coords="706,494,907,494,908,494,910,492,973,438,967,430,903,485,907,489,907,484,706,484,706,494,706,494" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e22')"/>
+  <area shape="poly" coords="706,494,868,494,868,489,863,489,863,703,868,703,868,698,799,698,799,708,868,708,873,703,873,489,868,484,706,484,706,494,706,494" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e21')"/>
+  <area shape="poly" coords="102,421,200,493,201,494,203,494,364,494,364,484,203,484,203,489,206,484,108,413,102,421,102,421" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e20')"/>
+  <area shape="poly" coords="115,421,199,463,200,464,202,464,363,464,363,454,202,454,202,459,204,454,120,413,115,421,115,421" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e19')"/>
+  <area shape="poly" coords="706,464,928,464,930,464,931,463,972,437,966,429,925,454,928,459,928,454,706,454,706,464,706,464" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e18')"/>
+  <area shape="poly" coords="706,464,848,464,848,459,843,459,843,913,848,913,848,908,798,909,799,919,848,918,853,918,853,913,853,459,848,454,706,454,706,464,706,464" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e17')"/>
+  <area shape="poly" coords="706,434,816,434,816,429,811,429,811,735,816,735,816,730,799,730,799,740,816,740,821,735,821,429,816,424,706,424,706,434,706,434" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e16')"/>
+  <area shape="poly" coords="706,434,765,434,770,429,770,68,765,63,713,65,714,75,766,73,765,68,760,68,760,429,765,429,765,424,706,424,706,434,706,434" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e15')"/>
+  <area shape="poly" coords="706,434,729,434,734,429,734,322,729,317,511,317,511,327,729,327,729,322,724,322,724,429,729,429,729,424,706,424,706,434,706,434" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e14')"/>
+  <area shape="poly" coords="706,434,968,434,968,424,706,424,706,434,706,434" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e13')"/>
+  <area shape="poly" coords="706,1502,942,1502,947,1497,947,1011,942,1006,798,1009,799,1019,942,1016,942,1011,937,1011,937,1497,942,1497,942,1492,706,1492,706,1502,706,1502" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e10')"/>
+  <area shape="poly" coords="1162,503,1162,1088,1167,1088,1167,1083,799,1083,799,1093,1167,1093,1172,1088,1172,503,1162,503,1162,503" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e9')"/>
+  <area shape="poly" coords="176,1309,238,1331,239,1332,240,1332,364,1332,364,1322,240,1322,240,1327,241,1322,180,1300,176,1309,176,1309" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e8')"/>
+  <area shape="poly" coords="1046,383,1046,35,1041,30,510,30,510,40,1041,40,1041,35,1036,35,1036,383,1046,383,1046,383" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e7')"/>
+  <area shape="poly" coords="706,1472,912,1472,917,1467,917,543,912,543,917,546,976,448,967,443,908,541,907,542,907,543,907,1467,912,1467,912,1462,706,1462,706,1472,706,1472" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e6')"/>
+  <area shape="poly" coords="130,1307,225,1498,226,1501,229,1501,364,1501,364,1491,229,1491,229,1496,233,1494,139,1303,130,1307,130,1307" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e5')"/>
+  <area shape="poly" coords="99,383,370,46,363,40,91,377,99,383,99,383" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e4')"/>
+  <area shape="poly" coords="114,384,214,326,211,322,211,327,363,327,363,317,211,317,210,317,209,317,109,376,114,384,114,384" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e3')"/>
+  <area shape="poly" coords="143,421,201,437,202,437,203,437,363,437,363,427,203,427,203,432,204,427,146,411,143,421,143,421" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('e2')"/>
+  <area shape="rect" coords="372,55,706,85" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n53')"/>
+  <area shape="rect" coords="372,90,706,120" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n52')"/>
+  <area shape="rect" coords="372,125,706,155" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n51')"/>
+  <area shape="rect" coords="372,160,706,190" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n50')"/>
+  <area shape="rect" coords="372,195,706,225" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n49')"/>
+  <area shape="rect" coords="372,230,706,260" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n48')"/>
+  <area shape="rect" coords="372,265,706,295" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n47')"/>
+  <area shape="rect" coords="180,1614,358,1644" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n46')"/>
+  <area shape="rect" coords="371,1517,502,1604" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n45')"/>
+  <area shape="rect" coords="60,1268,191,1305" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n44')"/>
+  <area shape="rect" coords="145,557,303,659" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n43')"/>
+  <area shape="rect" coords="372,1136,791,1158" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n42')"/>
+  <area shape="rect" coords="372,1097,791,1127" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n41')"/>
+  <area shape="rect" coords="372,1075,791,1097" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n40')"/>
+  <area shape="rect" coords="372,1054,791,1075" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n39')"/>
+  <area shape="rect" coords="372,1024,791,1045" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n38')"/>
+  <area shape="rect" coords="372,1002,791,1024" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n37')"/>
+  <area shape="rect" coords="372,954,791,984" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n36')"/>
+  <area shape="rect" coords="372,932,791,954" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n35')"/>
+  <area shape="rect" coords="372,910,791,932" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n34')"/>
+  <area shape="rect" coords="372,844,791,866" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n33')"/>
+  <area shape="rect" coords="372,822,791,844" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n32')"/>
+  <area shape="rect" coords="372,866,791,887" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n31')"/>
+  <area shape="rect" coords="372,778,791,799" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n30')"/>
+  <area shape="rect" coords="372,744,791,765" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n29')"/>
+  <area shape="rect" coords="372,722,791,744" href="account-identity-services-create_account.html" alt="" target="_blank" onmouseout="hideTooltip()" onmouseover="showTooltip('n28')"/>
+  <area shape="rect" coords="372,692,791,714" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n27')"/>
+  <area shape="rect" coords="372,643,791,684" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n26')"/>
+  <area shape="rect" coords="976,474,1310,504" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n25')"/>
+  <area shape="rect" coords="976,414,1310,444" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n24')"/>
+  <area shape="rect" coords="372,1337,730,1367" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n23')"/>
+  <area shape="rect" coords="372,1307,730,1337" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n22')"/>
+  <area shape="rect" coords="372,1477,706,1507" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n21')"/>
+  <area shape="rect" coords="372,1447,706,1477" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n20')"/>
+  <area shape="rect" coords="372,504,706,534" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n19')"/>
+  <area shape="rect" coords="372,474,706,504" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n18')"/>
+  <area shape="rect" coords="372,444,706,474" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n17')"/>
+  <area shape="rect" coords="372,414,706,444" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n16')"/>
+  <area shape="rect" coords="1065,1269,1196,1299" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n15')"/>
+  <area shape="rect" coords="1550,485,1626,522" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n14')"/>
+  <area shape="rect" coords="1550,430,1626,467" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n13')"/>
+  <area shape="rect" coords="15,380,146,417" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n12')"/>
+  <area shape="rect" coords="1375,492,1506,522" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n11')"/>
+  <area shape="rect" coords="1375,453,1506,483" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n10')"/>
+  <area shape="rect" coords="1375,414,1506,444" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n9')"/>
+  <area shape="rect" coords="372,20,503,50" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n8')"/>
+  <area shape="rect" coords="372,307,503,337" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n7')"/>
+  <area shape="rect" coords="1065,1307,1196,1337" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n6')"/>
+  <area shape="rect" coords="372,1271,503,1301" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n5')"/>
+  <area shape="rect" coords="1065,1230,1196,1260" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n4')"/>
+  <area shape="rect" coords="372,1417,503,1447" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n3')"/>
+  <area shape="rect" coords="372,384,503,414" href="http://id-sdet-docker2.dev.usw2.cs-htc.co:9079/docs_account " alt="" target="_blank" onmouseout="hideTooltip()" onmouseover="showTooltip('n2')"/>
+  <area shape="rect" coords="976,384,1107,414" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n1')"/>
+  <area shape="rect" coords="372,608,503,638" alt="" onmouseout="hideTooltip()" onmouseover="showTooltip('n0')"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="account-micro-services-architecture1_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+</body>
+</html>
